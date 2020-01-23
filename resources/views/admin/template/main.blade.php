@@ -37,7 +37,7 @@
     <div id="header_top" class="header_top">
         <div class="container">
             <div class="hleft">
-                <a class="header-brand" href="index.html"><img src="assets/images/apple-touch-icon-transparent.png" height="50px" width="50px"/></a>
+                <a href="javascript:void(0)" class="header-brand icon menu_toggle"><i class="fa fa-bars brand-logo"></i></a>
                 <div class="dropdown">
                     <a href="javascript:void(0)" class="nav-link user_btn"><img class="avatar" src="assets/images/user.png" alt="" data-toggle="tooltip" data-placement="right" title="Usuario#1"/></a>
                     <a href="page-search.html" class="nav-link icon xs-hide"><i class="fa fa-search"></i></a>                    
@@ -51,7 +51,7 @@
             <div class="hright">
                 <div class="dropdown">
                     <a href="javascript:void(0)" class="nav-link icon settingbar"><i class="fa fa-gear fa-spin" data-toggle="tooltip" data-placement="right" title="Settings"></i></a>
-                    <a href="javascript:void(0)" class="nav-link icon menu_toggle"><i class="fa  fa-align-left"></i></a>
+
                 </div>            
             </div>
         </div>
@@ -297,7 +297,14 @@
     </div>
 
     <div id="left-sidebar" class="sidebar ">
-        <h5 class="brand-name">USACAR <br>Import Center <a href="javascript:void(0)" class="menu_option float-right"><i class="fa fa-expand-arrows-alt" data-toggle="tooltip" data-placement="left" title="Grid & List Toggle"></i></a></h5>
+        <center>
+            <a class="header-brand" href="{{ url('/') }}"><img src="assets/images/logo_dark_variant.svg" height="50%" width="50%"/>
+                <a href="javascript:void(0)" class="menu_option float-right">
+                    <i class="fa fa-expand-arrows-alt" data-toggle="tooltip" data-placement="left" title="Grid & List Toggle"></i>
+                </a>
+            </a>
+        </center>
+        
         <nav id="left-sidebar-nav" class="sidebar-nav">
             <ul class="metismenu">
                 <li class="g_heading">Admin</li>
@@ -337,16 +344,17 @@
             <div class="container-fluid">
                 <div class="page-header">
                     <div class="left">
-                        <a href="javascript:void(0)" class="icon menu_toggle mr-3"><i class="fa fa-bars"></i></a>
-                        <h1 class="page-title">Dashboard</h1>                        
-                    </div>
-                    <div class="right">
+                        <h1 class="page-title">Dashboard</h1>  
                         <div class="input-icon xs-hide mr-4">
                             <input type="text" class="form-control" placeholder="Search for...">
                             <span class="input-icon-addon"><i class="fe fe-search"></i></span>
-                        </div>
+                        </div>                      
+                    </div>
+                    <div class="right">
+                        
                         <div class="notification d-flex">
-                            <div class="dropdown d-flex">
+                          <!-- Languages 
+                                <div class="dropdown d-flex">
                                 <a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-2" data-toggle="dropdown"><i class="fa fa-language"></i></a>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                     <a class="dropdown-item" href="#"><img class="w20 mr-2" src="assets/images/flags/us.svg">English</a>
@@ -355,7 +363,7 @@
                                     <a class="dropdown-item" href="#"><img class="w20 mr-2" src="assets/images/flags/jp.svg">japanese</a>
                                     <a class="dropdown-item" href="#"><img class="w20 mr-2" src="assets/images/flags/bl.svg">France</a>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="dropdown d-flex">
                                 <a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-2" data-toggle="dropdown"><i class="fa fa-envelope"></i><span class="badge badge-success nav-unread"></span></a>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
@@ -1093,15 +1101,11 @@
             <footer class="footer">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-6 col-sm-12">
-                            <a href="templateshub.net">Templates Hub</a>
+                        <div class="col-md-6 col-sm-102 text-md-left">
+                            <a href="https://idw.com.pe">© IDW</a>
                         </div>
                         <div class="col-md-6 col-sm-12 text-md-right">
-                            <ul class="list-inline mb-0">
-                                <li class="list-inline-item"><a href="doc/index.html">Documentation</a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)">FAQ</a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-outline-primary btn-sm">Buy Now</a></li>
-                            </ul>
+                            <!-- maybe links -->
                         </div>
                     </div>
                 </div>
