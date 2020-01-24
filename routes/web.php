@@ -5,8 +5,12 @@ Route::get("/", function () {
     return view("welcome",['name' => $nombre]);
 });
 
-Route::get("/clients",function(){
-    return view("clients.table");
+Route::get('/clients',function(){
+    return view("clients.index");
+});
+
+Route::get('/files',function(){
+    return view('files.index');
 });
 
 

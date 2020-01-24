@@ -1,11 +1,12 @@
+
 <div id="header_top" class="header_top">
         <div class="container">
             <div class="hleft">
                 <a href="javascript:void(0)" class="header-brand icon menu_toggle"><i class="fa  fa-bars brand-logo"></i></a>
                 <div class="dropdown">
                     <a href="javascript:void(0)" class="nav-link user_btn"><img class="avatar" src="assets/images/user.png" alt="" data-toggle="tooltip" data-placement="right" title="Usuario#1"/></a>
-                    <a href="app-contact.html"  class="nav-link icon xs-hide"><i class="fa fa-users" data-toggle="tooltip" data-placement="right" title="Clients"></i></a>
-                    <a href="app-calendar.html"  class="nav-link icon app_inbox xs-hide"><i class="fa fa-clipboard" data-toggle="tooltip" data-placement="right" title="Files"></i></a>
+                    <a href="{{ url('clients') }}"  class="nav-link icon xs-hide"><i class="fa fa-users" data-toggle="tooltip" data-placement="right" title="Clients"></i></a>
+                    <a href="{{ url('files') }}"  class="nav-link icon app_inbox xs-hide"><i class="fa fa-clipboard" data-toggle="tooltip" data-placement="right" title="Files"></i></a>
                     <a href="app-chat.html"  class="nav-link icon xs-hide"><i class="fa fa-car" data-toggle="tooltip" data-placement="right" title="Cars"></i></a>
                     <a href="app-chat.html"  class="nav-link icon xs-hide"><i class="fa fa-shipping-fast" data-toggle="tooltip" data-placement="right" title="Tracing"></i></a>
                     <a href="javascript:void(0)" class="nav-link icon theme_btn xs-hide"><i class="fa fa-shopping-cart" data-toggle="tooltip" data-placement="right" title="Shopping Cart"></i></a>
@@ -22,57 +23,6 @@
      <div id="rightsidebar" class="right_sidebar">
         <a href="javascript:void(0)" class="p-3 settingbar float-right"><i class="fa fa-close"></i></a>
         <div class="p-4">
-            <div class="mb-4">
-                <h6 class="font-14 font-weight-bold text-muted">Font Style</h6>
-                <div class="custom-controls-stacked font_setting">
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="font" value="font-opensans">
-                        <span class="custom-control-label">Open Sans Font</span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="font" value="font-montserrat" checked="">
-                        <span class="custom-control-label">Montserrat Google Font</span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="font" value="font-roboto">
-                        <span class="custom-control-label">Robot Google Font</span>
-                    </label>
-                </div>
-            </div>
-            <hr>
-            <div class="mb-4">
-                <h6 class="font-14 font-weight-bold text-muted">Dropdown Menu Icon</h6>
-                <div class="custom-controls-stacked arrow_option">
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="marrow" value="arrow-a">
-                        <span class="custom-control-label">A</span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="marrow" value="arrow-b">
-                        <span class="custom-control-label">B</span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="marrow" value="arrow-c" checked="">
-                        <span class="custom-control-label">C</span>
-                    </label>
-                </div>
-                <h6 class="font-14 font-weight-bold mt-4 text-muted">SubMenu List Icon</h6>
-                <div class="custom-controls-stacked list_option">
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="listicon" value="list-a" checked="">
-                        <span class="custom-control-label">A</span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="listicon" value="list-b">
-                        <span class="custom-control-label">B</span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="listicon" value="list-c">
-                        <span class="custom-control-label">C</span>
-                    </label>
-                </div>
-            </div>
-            <hr>
             <div>
                 <h6 class="font-14 font-weight-bold mt-4 text-muted">General Settings</h6>
                 <ul class="setting-list list-unstyled mt-1 setting_switch">
@@ -184,21 +134,8 @@
         <h5 class="brand-name mb-4">User Details<a href="javascript:void(0)" class="user_btn"><i class="icon-logout"></i></a></h5>
         <div class="card-body">
             <a href="page-profile.html"><img class="card-profile-img" src="assets/images/sm/avatar1.jpg" alt=""></a>
-            <h6 class="mb-0">{{  $name }}</h6>
+            <h6 class="mb-0">User#1</h6>
             <span>Email</span>
-
-        <!-- Activities Performance
-            <div class="progress progress-xs">
-                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar bg-orange" role="progressbar" style="width: 5%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar bg-indigo" role="progressbar" style="width: 13%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            -->
-
-            <h6 class="text-uppercase font-10 mt-1">Performance Score</h6>
-            <hr>
         </div>
     </div>
 
@@ -217,9 +154,8 @@
                 <li class="g_heading">Seller</li>
                 <li><a href="#"><i class="fa fa-car"></i><span>Cars</span></a></li>             
                 <li class="g_heading">Settings</li>
-  
-                        <li><a href="#">Profile</a></li>
-                        <li><a href="forgot-password.html">Logout</a></li>  
+                <li><a href="#"> <i class="fa fa-user-cog"> </i> Profile</a></li>
+                <li><a href="forgot-password.html"><i class="fa fa-sign-out-alt"></i> Logout</a></li>  
 
                 </li>
             </ul>

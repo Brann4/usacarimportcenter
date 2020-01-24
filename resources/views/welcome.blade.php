@@ -1,2 +1,4 @@
-@extends('admin.template.main')
+@extends('template.main')
+
+    
     
